@@ -4,7 +4,7 @@ module.exports = app => {
   app.use(
     "/reverser",
     createProxyMiddleware({
-      target: "http://localhost:5000",
+      target: "http://http://54.175.6.230:5000",
       changeOrigin: true
     })
   );
@@ -12,7 +12,7 @@ module.exports = app => {
   app.use(
     "/summation",
     createProxyMiddleware({
-      target: "http://localhost:5000",
+      target: "http://http://54.175.6.230:5000/",
       changeOrigin: true
     })
   );
